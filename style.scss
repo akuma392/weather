@@ -1,0 +1,95 @@
+@import 'reset';
+
+li {
+  list-style: none;
+}
+body {
+  background-color: #16394c;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.4;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  font-weight: 600;
+  padding: 0.5rem 0;
+  color: white;
+}
+.header {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+  input {
+    padding: 0.5rem 0.75rem;
+    outline: none;
+    border: 1px solid rgba(gray, 0.5);
+    width: 40%;
+    margin-top: 1rem;
+  }
+}
+h2 {
+  font-size: 1.8rem;
+  text-align: center;
+  color: rgba($color: white, $alpha: 0.8);
+  font-weight: 700;
+  margin-top: 5rem;
+}
+.weather {
+  max-width: 800px;
+  margin: 2.5rem auto;
+  width: 100;
+  text-align: center;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  // background-color: white;
+  padding: 1rem;
+  .image-block {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    img {
+      width: 30%;
+    }
+  }
+  p {
+    color: white;
+    margin-top: 0.5rem;
+  }
+}
+
+.deg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  h6 {
+    font-size: 3rem;
+    color: white;
+    font-weight: 700;
+    text-align: center;
+  }
+}
+
+.time,
+.details {
+  color: rgba($color: white, $alpha: 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 0.9rem;
+  span {
+    margin-left: 0.5rem;
+    font-weight: 600;
+    color: rgba($color: white, $alpha: 1);
+  }
+}
